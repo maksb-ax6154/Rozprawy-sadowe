@@ -44,8 +44,8 @@
 <div class="footer">Aula Iustitia • Wersja demonstracyjna do celów edukacyjnych. Treści nie są dokumentami sądowymi.</div></main>
 <script>
 // 1) Wklej tu Project URL i klucz anon/public z Supabase. Nie używaj service_role key!
-const SUPABASE_URL = "WSTAW_TUTAJ_PROJECT_URL";
-const SUPABASE_ANON_KEY = "WSTAW_TUTAJ_KLUCZ_ANON_PUBLIC";
+const SUPABASE_URL = "https://ioodpsenpjkejvmyigvl.supabase.co/rest/v1/";
+const SUPABASE_ANON_KEY = "sb_publishable_yzM-RMkBdrRUI5rJK1UjKg_gKEhUXps";
 // Konta wyłącznie demonstracyjne. Hasła w kodzie strony są widoczne dla odwiedzających.
 const ACCOUNTS=[{login:"Sędziowie",password:"t8NSSP9zt03",role:"judge",label:"Sędzia"},{login:"Ławnicy",password:"t7MKMA0za25",role:"clerk",label:"Ławnik / protokolant"}];
 const $=id=>document.getElementById(id);let user=null,db=null,channel=null;let verdicts=JSON.parse(localStorage.getItem("ai_verdicts")||"[]"),chat=JSON.parse(localStorage.getItem("ai_chat")||"[]"),breakEnd=Number(localStorage.getItem("ai_break_end")||0),hearingActive=localStorage.getItem("ai_hearing_active")==="true",hearingName=localStorage.getItem("ai_hearing_name")||"";
